@@ -1,10 +1,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
-
 #include <math.h>
 
-#define PI 3.14159265
 #define FONT "FreeSans.ttf"
 
 typedef enum {intro, show, imediato_, incrementalBasico_, bresenham_, todos_} GameState;
