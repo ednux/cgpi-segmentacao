@@ -324,14 +324,14 @@ int imediato(SDL_Renderer **renderer, SDL_Point *point)
 }
 int incrementalBasico(SDL_Renderer **renderer, SDL_Point *point)
 {
-	double a, t;
-	int x = point[0].x, y = point[0].y;
+	double a, t = point[0].y;
+	int x = point[0].x, y = 0;
 	
 	a = (double)(point[1].y - point[0].y) / (double)(point[1].x - point[0].x);
 	
 	while (x <= point[1].x) {
 		x = x + 1;
-		t = (double) y + a;
+		t = (double) t + a;
 		y = round(t);
 		desenhaPonto(renderer, x, y);
 	}
