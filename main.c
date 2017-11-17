@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
 	SDL_Rect pos2 = {0,0,0,0};
 	SDL_Point point[2] = {
 		{0,0},
-		{400,333}
+		{0,0}
 	};
 	
 	unsigned int lastTime = 0, currentTime;
